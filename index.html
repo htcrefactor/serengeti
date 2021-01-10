@@ -51,6 +51,10 @@
             next();
         });
 
+        $("#B").click(function() {
+            next();
+        })
+
         function next() {
             $("#title").html(q[num]["title"]);
             $("#type").val(q[num]["type"]);

@@ -75,6 +75,12 @@
             if(num == 13) {
                 $(".question").hide();
                 $(".result").show();
+
+                var mbti = "";
+                ($("#EI").val() > 2) ? (mbti = mbti + "E") : (mbti = mbti + "I");
+                ($("#SN").val() > 2) ? (mbti = mbti + "S") : (mbti = mbti + "N");
+                ($("#TF").val() > 2) ? (mbti = mbti + "T") : (mbti = mbti + "F");
+                ($("#JP").val() > 2) ? (mbti = mbti + "J") : (mbti = mbti + "P");
             }
 
             else {

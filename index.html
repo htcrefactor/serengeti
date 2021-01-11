@@ -77,13 +77,15 @@
                 $(".result").show();
             }
 
-            $(".progress-bar").attr("style", "width: calc(100% / 12 * " + num + ")");
+            else {
+                $(".progress-bar").attr("style", "width: calc(100% / 12 * " + num + ")");
 
-            $("#title").html(q[num]["title"]);
-            $("#type").val(q[num]["type"]);
-            $("#A").html(q[num]["A"]);
-            $("#B").html(q[num]["B"]);
-            num++;
+                $("#title").html(q[num]["title"]);
+                $("#type").val(q[num]["type"]);
+                $("#A").html(q[num]["A"]);
+                $("#B").html(q[num]["B"]);
+                num++;
+            }
         }
     </script>
 </body>

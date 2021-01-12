@@ -103,6 +103,10 @@
                 ($("#SN").val() > 2) ? (mbti = mbti + "S") : (mbti = mbti + "N");
                 ($("#TF").val() > 2) ? (mbti = mbti + "T") : (mbti = mbti + "F");
                 ($("#JP").val() > 2) ? (mbti = mbti + "J") : (mbti = mbti + "P");
+
+                $("#img").attr("src", result[mbti]["img"]);
+                $("#animal").html(result[mbti]["animal"]);
+                $("#explain").html(result[mbti]["explain"]);
             }
 
             else {

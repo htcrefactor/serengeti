@@ -24,7 +24,7 @@
     </article>
 
     <article class = "result">
-        <img id = "img" src = "/images/entp.jpg" alt = "Image by Michael Siebert from Pixabay" class = "rounded-circle mt-5">
+        <img id = "image" src = "/images/entp.jpg" alt = "Image by Michael Siebert from Pixabay" class = "rounded-circle mt-5">
         <h2 id = "animal" class = "text-center mt-5">동물 이름</h2>
         <h3 id = "explain" class = "text-center mt-5">설명</h3>
     </article>
@@ -55,25 +55,25 @@
         }
 
         var result = {
-            "INTJ": {"animal": "침팬지", "explain": "영리한 침팬지에요", "img": "/images/intj.jpg"},
-            "INTP": {"animal": "두꺼비", "explain": "터줏대감 두꺼비에요", "img": "/images/intp.jpg"},
-            "ENTJ": {"animal": "펭귄", "explain": "뒤뚱뒤뚱 펭귄이에요", "img": "/images/entj.jpg"},
-            "ENTP": {"animal": "사자", "explain": "세렝게티의 사자에요", "img": "/images/entp.jpg"},
+            "INTJ": {"animal": "침팬지", "explain": "영리한 침팬지에요", "image": "/images/intj.jpg"},
+            "INTP": {"animal": "두꺼비", "explain": "터줏대감 두꺼비에요", "image": "/images/intp.jpg"},
+            "ENTJ": {"animal": "펭귄", "explain": "뒤뚱뒤뚱 펭귄이에요", "image": "/images/entj.jpg"},
+            "ENTP": {"animal": "사자", "explain": "세렝게티의 사자에요", "image": "/images/entp.jpg"},
             
-            // "": {"animal": "", "explain": "", "img": ""},
-            // "": {"animal": "", "explain": "", "img": ""},
-            // "": {"animal": "", "explain": "", "img": ""},
-            // "": {"animal": "", "explain": "", "img": ""},
+            "INFJ": {"animal": "하마", "explain": "덩치 큰 하마에요", "image": ""},
+            "INFP": {"animal": "부엉이", "explain": "지혜로운 부엉이에요", "image": ""},
+            "ENFJ": {"animal": "물소", "explain": "저돌적인 물소에요", "image": ""},
+            "ENFP": {"animal": "치타", "explain": "날렵한 치타에요", "image": ""},
 
-            // "": {"animal": "", "explain": "", "img": ""},
-            // "": {"animal": "", "explain": "", "img": ""},
-            // "": {"animal": "", "explain": "", "img": ""},
-            // "": {"animal": "", "explain": "", "img": ""},
+            "ISTJ": {"animal": "나무늘보", "explain": "여유로운 나무늘보에요", "image": ""},
+            "ISFJ": {"animal": "거북이", "explain": "우직한 거북이에요", "image": ""},
+            "ESTJ": {"animal": "코끼리", "explain": "성깔 있는 코끼리에요", "image": ""},
+            "ESFJ": {"animal": "악어", "explain": "", "image": ""},
 
-            // "": {"animal": "", "explain": "", "img": ""},
-            // "": {"animal": "", "explain": "", "img": ""},
-            // "": {"animal": "", "explain": "", "img": ""},
-            // "": {"animal": "", "explain": "", "img": ""}
+            "ISTP": {"animal": "기린", "explain": "목이 긴 기린이에요", "image": ""},
+            "ISFP": {"animal": "호랑이", "explain": "사나운 호랑이에요", "image": ""},
+            "ESTP": {"animal": "개", "explain": "귀여운 개에요", "image": ""},
+            "ESFP": {"animal": "고양이", "explain": "요염한 고양이에요", "image": ""}
         }
 
         function start() {
@@ -104,7 +104,7 @@
                 ($("#TF").val() > 2) ? (mbti = mbti + "T") : (mbti = mbti + "F");
                 ($("#JP").val() > 2) ? (mbti = mbti + "J") : (mbti = mbti + "P");
 
-                $("#img").attr("src", result[mbti]["img"]);
+                $("#img").attr("src", result[mbti]["image"]);
                 $("#animal").html(result[mbti]["animal"]);
                 $("#explain").html(result[mbti]["explain"]);
             }
